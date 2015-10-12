@@ -1,0 +1,72 @@
+body{
+	background: url('img/FliesOutside.jpg') no-repeat center center fixed;
+	background-size: cover;
+	margin: 0 200 0 200;
+}
+h1{
+	color: white;
+	font-size: 70px;
+	margin:auto;
+	position: relative;
+	top: 20%;
+	text-align: center;
+	width: 600px;
+}	
+
+.thumbnail { 
+	height: 200px; overflow: hidden; }
+
+ul li{
+	display:inline;
+	text-align: center;
+	padding-left:5px;
+	padding-right:5px;
+	margin: auto;
+}
+/*a:hover { 
+    background-color: white;
+
+}*/
+a:visited {
+    color: white;
+}
+
+ul{
+	text-align: center;
+	margin:auto;
+	padding:0;
+}
+.navbar{
+	top:25%;
+
+}
+.row{
+	position: relative;
+	top:26%;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.ghost-button-semi-transparent {
+  display: inline-block;
+  width: 150px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              border-color 0.2s ease-out;
+}
+.ghost-button-semi-transparent:hover,
+.ghost-button-semi-transparent:active {
+  background-color: red; /* fallback */
+  font-color:black;
+  color: #fff;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: red; /* fallback */
+  border-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}

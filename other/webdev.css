@@ -1,0 +1,173 @@
+@font-face{
+	font-family: skarpalt;
+	src: url('fonts/SkarpaLT.ttf');
+}
+
+body{
+	position: relative; 
+	background: url('img/FliesOutside.jpg') no-repeat center center fixed;
+	background-size: cover;
+
+}
+.container{
+	background-color: white;
+	opacity: 0.8;
+}
+ul li{
+	display:inline;
+	text-align: center;
+	padding-left:5px;
+	padding-right:5px;
+	margin: auto;
+}
+
+ul{
+	text-align: center;
+	margin:auto;
+	padding:0;
+}
+.ghost-button-semi-transparent {
+  display: inline-block;
+  width: 150px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              border-color 0.2s ease-out;
+}
+.ghost-button-semi-transparent:hover,
+.ghost-button-semi-transparent:active {
+  background-color: red; /* fallback */
+  font-color:black;
+  color: #fff;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: red; /* fallback */
+  border-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
+.navbar{
+	/*top:40%;*/
+	padding-top: 30px;
+
+}
+#htmltags{
+	width: 510px;
+	height:580px;
+}
+.html{
+	text-align: center;
+	margin:auto;
+	position:relative;
+}
+#p1{
+	position:relative;
+	margin: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	left:55px;
+	top: 15px;
+
+}
+#p2{
+	position:relative;
+	margin: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	top: 15px;
+	left: 55px;
+	height:212px;
+
+}
+.breadcrumb>li+li:before{
+	color:black;
+}
+.breadcrumb{
+	top:7px;
+	font-size: 30px;
+	width:550px;
+	/*background-color: lightgrey;*/
+	margin:auto;
+	position: relative;
+	text-align: center;
+	opacity: 1.0;
+}
+#scrolls{
+	color: black;
+}
+#mouse{
+	position:relative;
+	left: 550px;
+	bottom:552px;
+	border: 1px solid #ccc;
+	margin: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+footer{
+	text-align: center;
+	opacity: 0.8; 
+	padding-top: 50px;
+}
+.col-sm-3{
+    width: 20%;
+    /*position:fixed;*/
+}
+ul.nav-tabs {
+	width: 140px;
+	margin-top: 20px;
+	border-radius: 4px;
+    background: #fff;
+    z-index: 999;
+	border: 1px solid #ddd;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+}
+ul.nav-tabs li {
+	margin: 0;
+	border-top: 1px solid #ddd;
+}
+ul.nav-tabs li:first-child {
+	border-top: none;
+}
+ul.nav-tabs li a {
+	margin: 0;
+	padding: 8px 16px;
+	border-radius: 0;
+}
+ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover {
+	color: #fff;
+	background: #0088cc;
+	border: 1px solid #0088cc;
+}
+ul.nav-tabs li:first-child a {
+	border-radius: 4px 4px 0 0;
+}
+ul.nav-tabs li:last-child a {
+	border-radius: 0 0 4px 4px;
+}
+ul.nav-tabs.affix {
+	top: 0px; /* set the top position of pinned element 
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    ul.nav-tabs{
+        width: 180px; /* set nav width on medium devices */
+    }
+}
+
+
+/*.breadcrumb{
+	text-align: center;
+	position: relative;
+	font-color: black;
+	top:-10px;
+}*/
+@media screen and (min-width: 1200px){
+    ul.nav-tabs{
+        width: 220px; /* set nav width on large devices */
+    }
+}*/*/
+

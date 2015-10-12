@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Kelly M Cole</title>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+        <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+               <link rel="stylesheet" type="text/css" href="webdev.css">
+    </head>
+     
+
+
+<body data-spy="scroll" data-target="#myScrollspy" id = "scrolls">
+      <ul class="breadcrumb">
+         <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle"><u>Projects</u><b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="webdevtutorialseries.html">Web Dev Tutorial Series</a></li>
+                <li><a href="merger.html">Merger</a></li>
+            </ul>
+        </li>
+        <li><a href="index.html">About</a></li> 
+        <li><a href="docs/KellyColeResume.pdf" target="_blank">Resume<!-- R&eacute;sum&eacute; --></a></li>
+    </ul>  
+<div class="container">
+    <h1>WebDev Workshop</h1>
+    <p class="lead"><i>Introduction To Web Programming</i> <a href = "docs/WebDevDemo.key">[PPT]</a></p>
+    <div class="row">
+        <div class="col-sm-3" id="myScrollspy">
+            <ul class="nav nav-tabs nav-stacked" data-offset-top="120" data-spy="affix">
+                <li class="active"><a href="#section1">Getting Started</a></li>
+                <li><a href="#section2">HTML</a></li>
+                <li><a href="#section3">CSS</a></li>
+                <li><a href="#section4">Bootstrap</a></li>
+                <li><a href="#section5">Additional Resources & References</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9">
+  
+            <div id="section1">
+                <h2>Getting Started </h2>
+                <h3>1.1 Text Editor</h3>
+                    <p> I would recommend downloading <a href = "http://www.sublimetext.com/" target="_blank"> Sublime Text</a> or <a href = "https://notepad-plus-plus.org/" target="_blank"> Notepad++</a> </p>
+                <h3>1.2 Domain & Hosting</h3>
+                    <p>
+                        <blockquote>'Your default web hosting account is created automatically the first time you login to <a = href = "https://web.engr.illinois.edu">https://web.engr.illinois.edu</a>. As long as you have an active EWS account, you will have an active web hosting account as well'    &mdash; Engineering IT Services</blockquote>
+
+                        Your default URL will follow this format '<b>netid.web.engr.illinois.edu</b>' If you had a web.engr.illinois.edu web hosting account prior to the fall 2015 semester</u>, your URL will be http://web.engr.illinois.edu/~netid. <br>
+                    </p>
+                <h3><small>1.2.1 What if I don't have an EWS account?</small></h3>
+                    <p>Check out this tutorial by Treehouse <a href = "http://blog.teamtreehouse.com/using-github-pages-to-host-your-website"> 'Using GitHub Pages To Host Your Website'</a> (also use may as well use your illinois.edu email address to get the <a href = "https://education.github.com/pack"> Github Student Developer Pack</a> while you're at it).</p>    
+
+                <!-- <h3>1.3 Download Bootstrap</h3> -->
+                    <p>
+            </div>
+            <hr>
+            <div id="section2">
+                <h2>HTML</h2>
+
+                <h3>2.1 Overview</h3>
+                <p>HTML is a markup language that is used to divide and group the content meaningfully on a web page. Web browers then render the content into visible pages. HTML uses tags, denoted by open and closing brackets, to mark the beginning and ending of segments as seen in the image below. Most all HTML elements have an ending tags (with a few exceptions).<br>
+                   <br>
+                Spaces in an html file aren't interpreted as you might think so be aware that extra spaces don't really change how the browser formats the text. It's important to note that the visual organization and formatting of the HTML elements should be done with CSS, which by convention should be the only way items are styled. That being said, people still use things like: '&lt;br>' (to insert line breaks) and '&amp;nbsp;' (to insert the space of a ordinary character). 
+            <div class = "html">
+                <img src = "img/HTML.png"  width="400">
+            </div>  
+            </p>
+                <h3>2.2 Common HTML Tags</h3>
+<div id = "htmltags">
+"index.html"
+<pre> 
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>&lt;title>ProjectTitle&lt;/title>&lt;/head>
+&lt;body>
+ &lt;p>
+   &lt;h1>Meh.&lt;/h1>
+   &lt;h2>Meh.&lt;/h2>
+   &lt;h3>Meh.&lt;/h3>
+   &lt;h4>Meh.&lt;/h4>
+   &lt;h5>Meh.&lt;/h5>
+   &lt;h6>Meh.&lt;/h6>
+
+   &lt;i>italicized text&lt;/i>&lt;br>
+   &lt;b>bolded text&lt;/b>&lt;br>
+
+   &lt;a href ="http://goo.gl/HXu6YM">link to image&lt;/a>&lt;br>
+   &lt;img src ="http://goo.gl/HXu6YM" width="200" height="200">
+ &lt;/p>
+ &lt;div>
+ &lt;ol>
+   &lt;li>ordered list item1&lt;/li>
+   &lt;li>ordered list item2&lt;/li>
+   &lt;li>ordered list item3&lt;/li>
+ &lt;/ol>  
+ &lt;/div>  
+&lt;/body>
+&lt;/html>
+    </pre>
+    <img src = "img/Mouse.png" id="mouse" height = "543">
+</div>
+                <h3><small>So How Can I Create an HTML file?</small></h3>
+                <p>Try copying the code above entitled "index.html" into a text editor of your choice. Save the file as anything you choose, just be sure ".html" is the file's extension. Then go ahead and click on the file and it should display like the image to the right.</p>
+            </div>
+             <div>
+                 <h3>2.3 Defining Classes and Ids</h3>
+                 <p>HTML is the basis from which css then implements stylings. But how does css know which elements to style how? Initially this can be done through use of the html tags themselves (ie. p, div, h1, h2, etc.) Things soon get difficult when you want to style multiple p elements differently.Hence the need for classes and ids arises.</p>
+
+                 <p><b>Classes</b> are indicated in the .html file with a class = "ArbitraryClassName" statement which is added directly into the tag of an html element. Multiple html elements can be defined with the same class as a means of grouping their stylings together. </p>
+
+                 <p><b>Ids</b> are similar to classes in that they're defined in .html files with a id = "ArbitraryIdName" statement inside the html tag itself. Ids on the other hand can only be define once. Meaning that only one html element can have a single id.</p>
+            
+                <div class="html">
+                        <img src = "img/htmlP0.png" width="450" ><br>                        <caption>Example of class and id assignments</caption>
+                </div>
+   
+            </div>
+            
+            <hr>
+            <div id="section3">
+                <h2>CSS</h2>
+                <h3>3.1 Overview</h3>
+                <p>Once the core page content has been decided upon and the HTML has been hashed out we'll use cascading style sheets (css) to make it pretty. 
+                
+                Although CSS can be included in the header tag of any html file, the best practice is to put it into a file of it's own and include it using something like: 
+                <pre>&lt;link rel="stylesheet" type="text/css" href="style.css"></pre> 
+
+                CSS allows you to select or group html elements and specify things like: margins/padding, backgrounds, colors, text sizes, fonts, alignment, etc. It's a great way to make different pages on a site look uniform.</p>
+
+                <h3>3.2 Selectors</h3>
+                <p>
+                So we know how html tags, classes and ids are used to uniquely define a set of elements to style within the html but how should we go about selecting items to style from the css point of view? </p>
+
+                We've established three primary ways of selecting elements and in the css file here is a generic approach to how we select them: by <b> html tag type</b> (ie. &lt;p> paragraphs, &lt;div> divisions, &lt;h1> headers, etc.), <b>by class</b> (class is identified inside an html tag) and <b>by id</b>. 
+                </p>
+        
+                <img src = "img/genericSelection.png" width="300" id ="p1">
+
+                <img src = "img/standardSelection.png"  id ="p2">
+            
+           <br><br>
+                <h3>3.3 The Notion of Priority</h3>
+                <p>
+                With more involved websites, the css can become cluttered and when you're integrating frameworks like bootstrap (that have predefined css stylings) sometimes you'll have collisions. By collision I mean the situation where there are two identical directives that are assigned different values leading to a conflict. In this case the actual style is determine by which styling is of the highest priority. Below is a list in order of decreasing priority.
+                </p>
+
+                <ol>
+                    <li>Inline
+                        <pre><p>&lt;img src = "#" <u>width="400" height="300"</u>></p></pre></li>
+                    <li>Internal
+                        <p>
+<pre>
+"index.html"
+
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+    &lt;style>
+    p {
+        background-color: white;
+        opacity: 0.8; 
+        width: 750px;
+    }
+
+    body{
+        position: relative; /* required */
+    }
+
+    .breadcrumb{
+        text-align: center;
+    }
+    &lt;/style>
+&lt;/head>
+&lt;body>
+&lt;/body>
+&lt;/html>
+</pre>
+                        </p>
+                    </li>
+                    <li>External 
+                        <p>
+<pre>
+"style.css"
+
+  p {
+        background-color: white;
+        opacity: 0.8; 
+        width: 750px;
+    }
+
+    body{
+        position: relative; /* required */
+    }
+
+    .breadcrumb{
+        text-align: center;
+    }
+
+</pre>
+                        </p>
+                    </li>
+                </ol>
+
+                </p>
+            </div>
+            <hr>
+
+            <div id="section4">
+                <h2>Bootstrap</h2>
+                <p> Bootstrap is a open-source front end framework that provide a uniform and modern way of formatting and organizing elements with less overhead. Bootstrap also has <a href = "http://getbootstrap.com/javascript/#buttons">JavaScript components</a> (jQuery plugins) that make interfaces more interactive and dynamic. </p>
+                <p>The framework has a whole list of <a href = "http://getbootstrap.com/components/"> components</a> including: navigation bars, carousels, buttons, labels, badges, panels, banners, thumbnails, etc.
+
+                <p>Other features include the ability for a single site to accomodate for various screen sized.</p>
+
+                <h3>4.1 How To Start Using Bootstrap</h3>
+                <p>One way is to go to go ahead and download things off the Bootstrap site, but the fastest way to get started is by including a link to the minified CSS, Javascript, and jQuery files in the header of your html in addition to any other custom files you have to include, 
+                    <pre>
+&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>                    
+                    </pre>
+            </p>
+            </div>
+
+            <div id="section5">
+                <h2>Additional Resources & References</h2>
+                <p>HTML, CSS guides & tutorials
+<a href = "http://www.w3schools.com/default.asp"> W3Schools</a>
+</p><footer>
+    <p id = "foot">&copy; 
+        <script>new Date().getFullYear()>2010&&document.write(""+new Date().getFullYear());</script> Kelly M. Cole</p>
+    </footer>
+            </div>    
+        </div>
+    </div>
+    
+
+    </div>
+        </body>
+    </html>
+
