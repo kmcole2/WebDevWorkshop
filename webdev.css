@@ -10,6 +10,11 @@ body{
 	margin: 0 200 0 200;
 
 }
+ul{
+	text-align: center;
+	margin:auto;
+	padding:0;
+}
 .navbar ul li{
 	display: inline;
 	margin: auto;
@@ -17,11 +22,7 @@ body{
 	padding-right:5px;
 	margin: auto;
 }
-ul{
-	text-align: center;
-	margin:auto;
-	padding:0;
-}
+
 .title{
 	color: white;
 	text-align: center;
